@@ -17,6 +17,6 @@ class Product extends Model
     ];
 
     public function suppliers(){
-        return $this->belongsToMany( 'App\Supplier', 'product_supplier', 'product_id', 'supplier_id');
+        return $this->belongsToMany('App\Supplier', 'product_supplier', 'product_id', 'supplier_id');
     }
 }
